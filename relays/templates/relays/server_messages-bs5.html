@@ -1,0 +1,20 @@
+{% load i18n %}
+{% load humanize %}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">{% translate "Server Messages" %}</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table table-responsive" id="table-server-messages" style="width: 100%;">>
+            <thead>
+                <tr>
+                    <th class="text-left">{% translate "Sent" %}</th>
+                    <th class="text-left">{% translate "Channel" %}</th>
+                    <th class="text-left">{% translate "Username" %}</th>
+                    <th class="text-left">{% translate "Content" %}</th>
+
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>

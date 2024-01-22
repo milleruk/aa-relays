@@ -1,0 +1,12 @@
+from django.conf import settings
+
+
+def aadiscordbot_active():
+    return 'aadiscordbot' in settings.INSTALLED_APPS
+
+
+RELAYS_TASK_PRIORITY_PROCESSMESSAGE = getattr(settings, "RELAYS_TASK_PRIORITY_PROCESSMESSAGE", 1)
+RELAYS_TASK_PRIORITY_SENDMESSAGE = getattr(settings, "RELAYS_TASK_PRIORITY_SENDMESSAGE", 1)
+RELAYS_TASK_PRIORITY_PROCESSEMBED = getattr(settings, "RELAYS_TASK_PRIORITY_PROCESSEMBED", 2)
+RELAYS_TASK_PRIORITY_SENDEMBED = getattr(settings, "RELAYS_TASK_PRIORITY_SENDEMBED", 2)
+RELAYS_APP_BRANDNAME = getattr(settings, "RELAYS_APP_BRANDNAME", "AA Relays")

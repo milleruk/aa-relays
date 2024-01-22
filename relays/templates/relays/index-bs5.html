@@ -1,0 +1,32 @@
+{% extends "relays/base-bs5.html" %}
+{% load i18n %}
+{% load humanize %}
+{% block content %}
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-2">
+        {% for server in servers %}
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h5 class="card-title">{{ server.name }}</h5>
+                        {% if server.last_message_oneday %}
+                            <span class="badge text-bg-danger">{{ server.last_message.timestamp|naturaltime }}</span>
+                        {% elif server.last_message_onehour %}
+                            <span class="badge text-bg-warning">{{ server.last_message.timestamp|naturaltime }}</span>
+                        {% else %}
+                            <span class="badge bg-secondary">{{ server.last_message.timestamp|naturaltime }}</span>
+                        {% endif %}
+                    </div>
+                    <div class="card-body">
+                        {% trans "Channels" %}:<span class="badge bg-secondary">{{ server.channel_set.count|intcomma }}</span>
+                        <br />
+                        {% trans "Users" %}:<span class="badge bg-secondaryt">{{ server.users|intcomma }}</span>
+                        <br />
+                    </div>
+                    <div class="card-footer">
+                        <a href="{% url 'relays:server' server.server %}"><span class="btn btn-primary" role="button">{% trans "View Messages" %}: <span class="badge bg-secondary">{{ server.message_count|intcomma }}</span></a></span>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock content %}

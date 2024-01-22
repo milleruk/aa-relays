@@ -1,0 +1,20 @@
+{% extends "allianceauth/base-bs5.html" %}
+{% load i18n %}
+{% load humanize %}
+{% load static %}
+
+{% block page_title %}
+    {% translate "Relays" %}
+{% endblock page_title %}
+
+{% block header_nav_brand %}
+    <a class="navbar-brand" href="{% url 'relays:index' %}">{% trans "Relays" %}</a>
+{% endblock header_nav_brand %}
+{% block header_nav_collapse_left %}
+{% endblock header_nav_collapse_left %}
+
+{% block header_nav_collapse_right %}
+{% endblock header_nav_collapse_right %}
+
+{% block content %}
+{% endblock content %}

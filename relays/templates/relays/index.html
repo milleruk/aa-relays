@@ -1,0 +1,39 @@
+{% extends "relays/base.html" %}
+{% load i18n %}
+{% load humanize %}
+{% block details %}
+    <div class="panel panel-success col-lg-12 container-fluid">
+        <div class="panel-heading">
+            <span class="panel-title">{% translate "Relay Servers" %}</span>
+        </div>
+        <div class="panel-body">
+            {% for server in servers %}
+                <div class="panel panel-default col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            {{ server.name }}
+                            {% if server.last_message_oneday %}
+                                <span class="label label-danger">{{ server.last_message.timestamp|naturaltime }}</span>
+                            {% elif server.last_message_onehour %}
+                                <span class="label label-warning">{{ server.last_message.timestamp|naturaltime }}</span>
+                            {% else %}
+                                <span class="label label-default">{{ server.last_message.timestamp|naturaltime }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        {% trans "Channels" %}:<span class="label label-default">{{ server.channel_set.count|intcomma }}</span><br />
+                        {% trans "Users" %}:<span class="label label-default">{{ server.users|intcomma }}</span><br />
+                        <a href="{% url 'relays:server' server.server %}"><span class="btn btn-primary" role="button">{% trans "View Messages" %}: <span class="label label-default">{{ server.message_count|intcomma }}</span></a></span>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock details %}
+{% block extra_javascript %}
+{% endblock extra_javascript %}
+{% block extra_css %}
+{% endblock extra_css %}
+{% block extra_script %}
+{% endblock extra_script %}

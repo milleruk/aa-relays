@@ -1,0 +1,51 @@
+{% extends "relays/base-bs5.html" %}
+{% load i18n %}
+{% load humanize %}
+{% block content %}
+    <div class="card card-success col-lg-12 container-fluid">
+        <div class="card-header">
+            <span class="card-title">{% translate "Server" %}: {{ server.name }}</span>
+        </div>
+        <div class="card-body">{% include "relays/server_messages.html" %}</div>
+    </div>
+{% endblock content %}
+{% block extra_javascript %}
+    {% include "bundles/datatables-js-bs5.html" %}
+    {% include "bundles/moment-js.html" with locale=True %}
+{% endblock extra_javascript %}
+
+{% block extra_css %}
+    {% include "bundles/datatables-css-bs5.html" %}
+{% endblock extra_css %}
+{% block extra_script %}
+    $(document).ready(function(){
+    $('#table-server-messages').DataTable({
+    "ajax": {
+    "url": "{% url 'relays:server_messages' %}",
+    "dataSrc": "server_messages",
+    "data": {
+    "server_id": "{{ server.server }}"
+    }
+    },
+    columns: [
+    {
+    data: "timestamp"
+    },
+    {
+    data: "channel__name"
+    },
+    {
+    data: "author_nick"
+    },
+    {
+    data: 'content',
+    },
+
+    ],
+    "order": [[ 2, "asc" ]],
+    "processing": true,
+    "stateSave": true,
+    "stateDuration": 0,
+    } );
+    });
+{% endblock extra_script %}

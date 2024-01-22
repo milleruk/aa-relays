@@ -1,0 +1,318 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# kotaneko, 2023
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-08 14:54+1000\n"
+"PO-Revision-Date: 2020-11-20 06:14+0000\n"
+"Last-Translator: kotaneko, 2023\n"
+"Language-Team: Japanese (https://app.transifex.com/alliance-auth/teams/107430/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: relays/auth_hooks.py:15
+msgid "relays"
+msgstr ""
+
+#: relays/models.py:30
+msgid "Discord"
+msgstr "Discord"
+
+#: relays/models.py:31
+msgid "Slack"
+msgstr "Slack"
+
+#: relays/models.py:32
+msgid "XMPP"
+msgstr "XMPP"
+
+#: relays/models.py:38 relays/models.py:89
+msgid "Users"
+msgstr ""
+
+#: relays/models.py:81
+msgid "User ID"
+msgstr ""
+
+#: relays/models.py:82 relays/templates/relays/server_messages.html:13
+msgid "Username"
+msgstr ""
+
+#: relays/models.py:83
+msgid "Is Bot User?"
+msgstr ""
+
+#: relays/models.py:85
+msgid "Created Timestamp"
+msgstr ""
+
+#: relays/models.py:88 relays/models.py:183
+msgid "User"
+msgstr ""
+
+#: relays/models.py:121
+msgid "Thread"
+msgstr ""
+
+#: relays/models.py:123
+msgid "GuildChannel.TextChannel"
+msgstr ""
+
+#: relays/models.py:124 relays/models.py:126
+msgid "GuildChannel.ForumChannel"
+msgstr ""
+
+#: relays/models.py:125
+msgid "GuildChannel.VoiceChannel"
+msgstr ""
+
+#: relays/models.py:127
+msgid "GuildChannel.StageChannel"
+msgstr ""
+
+#: relays/models.py:129
+msgid "PrivateChannel.DMChannel"
+msgstr ""
+
+#: relays/models.py:130
+msgid "PrivateChannel.GroupChannel"
+msgstr ""
+
+#: relays/models.py:135
+msgid "Recipients"
+msgstr ""
+
+#: relays/models.py:175
+msgid "Edit Count"
+msgstr ""
+
+#: relays/models.py:181
+msgid "Message is @everyone"
+msgstr ""
+
+#: relays/models.py:220
+msgid "Message Embed to String"
+msgstr ""
+
+#: relays/models.py:221 relays/models.py:236
+msgid "Message"
+msgstr ""
+
+#: relays/models.py:224
+msgid "MessageEmbed"
+msgstr ""
+
+#: relays/models.py:225
+msgid "MessageEmbeds"
+msgstr ""
+
+#: relays/models.py:232
+msgid "Attachment ID"
+msgstr ""
+
+#: relays/models.py:233
+msgid "Filename"
+msgstr ""
+
+#: relays/models.py:234
+msgid "Media Type"
+msgstr ""
+
+#: relays/models.py:235
+msgid "URL"
+msgstr ""
+
+#: relays/models.py:239
+msgid "Message Attachment"
+msgstr ""
+
+#: relays/models.py:240
+msgid "Message Attachments"
+msgstr ""
+
+#: relays/models.py:267
+msgid "Channel Message"
+msgstr "チャンネルメッセージ"
+
+#: relays/models.py:268
+msgid "Direct Message"
+msgstr "ダイレクトメッセージ"
+
+#: relays/models.py:306
+msgid "Blue"
+msgstr ""
+
+#: relays/models.py:307
+msgid "blurple"
+msgstr ""
+
+#: relays/models.py:308
+msgid "brand_green"
+msgstr ""
+
+#: relays/models.py:309
+msgid "brand_red"
+msgstr ""
+
+#: relays/models.py:310
+msgid "dark_blue"
+msgstr ""
+
+#: relays/models.py:311
+msgid "dark_gold"
+msgstr ""
+
+#: relays/models.py:312
+msgid "dark_grey"
+msgstr ""
+
+#: relays/models.py:313
+msgid "dark_green"
+msgstr ""
+
+#: relays/models.py:314
+msgid "dark_magenta"
+msgstr ""
+
+#: relays/models.py:315
+msgid "dark_orange"
+msgstr ""
+
+#: relays/models.py:316
+msgid "dark_purple"
+msgstr ""
+
+#: relays/models.py:317
+msgid "dark_red"
+msgstr ""
+
+#: relays/models.py:318
+msgid "dark_teal"
+msgstr ""
+
+#: relays/models.py:319
+msgid "dark_theme"
+msgstr ""
+
+#: relays/models.py:320
+msgid "darker_grey"
+msgstr ""
+
+#: relays/models.py:321
+msgid "embed_background"
+msgstr ""
+
+#: relays/models.py:322
+msgid "fuchsia"
+msgstr ""
+
+#: relays/models.py:323
+msgid "gold"
+msgstr ""
+
+#: relays/models.py:324
+msgid "green"
+msgstr ""
+
+#: relays/models.py:325
+msgid "greyple"
+msgstr ""
+
+#: relays/models.py:326
+msgid "light_grey"
+msgstr ""
+
+#: relays/models.py:327
+msgid "lighter_grey"
+msgstr ""
+
+#: relays/models.py:328
+msgid "nitro_pink"
+msgstr ""
+
+#: relays/models.py:329
+msgid "og_blurple"
+msgstr ""
+
+#: relays/models.py:330
+msgid "orange"
+msgstr ""
+
+#: relays/models.py:331
+msgid "purple"
+msgstr ""
+
+#: relays/models.py:332
+msgid "red"
+msgstr ""
+
+#: relays/models.py:333
+msgid "teal"
+msgstr ""
+
+#: relays/models.py:334
+msgid "yellow"
+msgstr ""
+
+#: relays/models.py:336
+msgid "Override Colour"
+msgstr ""
+
+#: relays/models.py:348
+msgid "Name"
+msgstr ""
+
+#: relays/models.py:349
+msgid "Description"
+msgstr ""
+
+#: relays/models.py:356
+msgid "ScheduledEvent"
+msgstr ""
+
+#: relays/models.py:357
+msgid "ScheduledEvents"
+msgstr ""
+
+#: relays/models.py:365
+msgid "Destination Webhook for Status Updates"
+msgstr ""
+
+#: relays/templates/relays/base.html:6
+msgid "Relays"
+msgstr "Relays"
+
+#: relays/templates/relays/index.html:7
+msgid "Relay Servers"
+msgstr ""
+
+#: relays/templates/relays/server.html:7
+msgid "Server"
+msgstr ""
+
+#: relays/templates/relays/server_messages.html:5
+msgid "Server Messages"
+msgstr ""
+
+#: relays/templates/relays/server_messages.html:11
+msgid "Sent"
+msgstr ""
+
+#: relays/templates/relays/server_messages.html:12
+msgid "Channel"
+msgstr ""
+
+#: relays/templates/relays/server_messages.html:14
+msgid "Content"
+msgstr ""
